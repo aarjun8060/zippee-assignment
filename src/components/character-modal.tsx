@@ -10,7 +10,12 @@ import {
 } from "./ui/dialog";
 import { Separator } from "./ui/separator";
 import { Card, CardContent } from "./ui/card";
-import { getGenderIcon, getGenderColor } from "../lib/character-utils";
+import {
+  getGenderIcon,
+  getGenderColor,
+  formatDateAdded,
+  convertHeightToMeters,
+} from "../lib/character-utils";
 
 const InfoRow = ({
   label,
@@ -96,11 +101,7 @@ const CharacterModal = ({
                 />
                 <InfoRow
                   label="Height"
-                  value={
-                    character.height !== "unknown"
-                      ? `${character.height} cm`
-                      : null
-                  }
+                  value={convertHeightToMeters(character.height)}
                 />
                 <InfoRow
                   label="Mass"
@@ -112,6 +113,10 @@ const CharacterModal = ({
                 <InfoRow label="Skin Color" value={character.skin_color} />
                 <InfoRow label="Eye Color" value={character.eye_color} />
                 <InfoRow label="Birth Year" value={character.birth_year} />
+                <InfoRow
+                  label="Date Added"
+                  value={formatDateAdded(character.created)}
+                />
               </div>
             </CardContent>
           </Card>

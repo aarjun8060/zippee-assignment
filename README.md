@@ -46,6 +46,35 @@ The production build will be created in the `dist` directory.
 npm run preview
 ```
 
+### Running Tests
+
+The project includes integration tests using **Vitest** and **React Testing Library**.
+
+To run tests:
+
+```bash
+# Run tests in watch mode
+npm run test
+
+# Run tests once
+npm run test:run
+
+# Run tests with UI
+npm run test:ui
+```
+
+The test suite includes:
+
+- **Integration test** for the character modal component
+- Verifies that the modal opens and displays all required character details:
+  - Name (as header)
+  - Height (in meters)
+  - Mass (in kg)
+  - Date added (formatted as dd-MM-yyyy)
+  - Number of films
+  - Birth year
+  - Homeworld details (name, terrain, climate, population)
+
 ## ✨ What Was Implemented
 
 ### Core Features
@@ -79,8 +108,13 @@ npm run preview
 
    - Detailed character information view
    - Fetches and displays:
-     - Basic information (name, height, mass, appearance details)
-     - Homeworld details (planet name, terrain, climate, population)
+     - **Name** (as header)
+     - **Height** (in meters)
+     - **Mass** (in kg)
+     - **Date added** (formatted as dd-MM-yyyy)
+     - **Number of films** the person appears in
+     - **Birth year**
+     - **Homeworld details:** name, terrain, climate, and population
      - Species information
      - Film, starship, and vehicle counts
    - Beautiful modal UI with character images
@@ -148,6 +182,7 @@ npm run preview
 - **Form Handling**: React Hook Form 7.66.0 + Zod 4.1.12
 - **HTTP Client**: Axios 1.13.2
 - **Icons**: Lucide React 0.553.0
+- **Testing**: Vitest 4.0.9, React Testing Library, @testing-library/jest-dom
 
 ## 📁 Project Structure
 
@@ -172,6 +207,10 @@ src/
 ├── types/              # TypeScript type definitions
 ├── config/            # Configuration files
 ├── hooks/             # Custom React hooks
+├── test/              # Test utilities and setup
+│   ├── setup.ts       # Test configuration
+│   └── test-utils.tsx # Custom render with providers
+├── components/__tests__/ # Component tests
 ├── assets/            # Static assets
 ├── App.tsx            # Main app component
 └── main.tsx           # Application entry point
