@@ -1,5 +1,9 @@
 import { Skeleton } from "../ui/skeleton";
 
+/**
+ * @returns CharacterSkeleton component
+ * This component is used to display a skeleton loading state for the character cards
+ */
 const CharacterSkeleton = () => {
     return (
       <div className="w-full flex justify-center items-center">

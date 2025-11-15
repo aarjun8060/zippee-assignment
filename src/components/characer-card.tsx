@@ -13,7 +13,10 @@ interface CharacterCardProps {
   character: Character;
   handleOpenCharacterModal: () => void;
 }
-
+/** 
+ * @returns CharacterCard component
+ * This component is used to display a character card with the character details
+ */
 const CharacterCard = ({
   id,
   name,

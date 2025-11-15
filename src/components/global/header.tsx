@@ -3,14 +3,16 @@ import {
     CardHeader,
     CardTitle,
     CardDescription,
-    CardContent,
-    CardFooter,
 } from "../ui/card";
 interface HeaderProps {
     title: string;
     description: string;
 }
 
+/**
+ * @returns Header component
+ * This component is used to display a header using title and description
+ */
 const Header = ({
     title,
     description,

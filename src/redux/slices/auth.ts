@@ -12,7 +12,14 @@ const initialState = {
   isAuthenticated: false as boolean,
   isLoading: false as boolean,
 };
-
+/**
+ * @returns AuthSlice component
+ * This component is used to display the auth slice
+ * 
+ * setUser - Set the user data
+ * setIsAuthenticated - Set the authentication status
+ * setIsLoading - Set the loading status
+ */
 const authSlice = createSlice({
   name: "auth",
   initialState,

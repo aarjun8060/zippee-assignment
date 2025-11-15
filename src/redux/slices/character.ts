@@ -23,6 +23,17 @@ const initialState = {
   favorites: [] as Character[],
 };
 
+/**
+ * @returns CharacterSlice component
+ * This component is used to display the character slice
+ * 
+ * setCharacters - Set the characters data
+ * setSelectedCharacter - Set the selected character data
+ * setPagination - Set the pagination data
+ * setIsLoading - Set the loading status
+ * setIsLoadingDetails - Set the loading details status
+ * setError - Set the error data
+ */
 const characterSlice = createSlice({
   name: "character",
   initialState,

@@ -22,6 +22,9 @@ import { Search, X, SearchX } from "lucide-react";
 import Navbar from "../components/global/navbar";
 import EmptyState from "../components/global/empty-state";
 
+/* @returns Home component
+ * This component is used to display the home page with the characters
+ */
 const Home = () => {
   const dispatch = useDispatch<AppDispatch>();
   const {

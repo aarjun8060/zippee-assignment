@@ -5,6 +5,10 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
+/**
+ * @param url - The URL of the star wars API
+ * @returns The page number from the URL
+ */
 export function getPageNumber(url: string) {
   const match = url.match(/[?&]page=(\d+)/);
   if (match) {

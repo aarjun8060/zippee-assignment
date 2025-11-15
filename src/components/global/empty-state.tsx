@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 import { cn } from "../../lib/utils";
 
 interface EmptyStateProps {
@@ -8,6 +8,10 @@ interface EmptyStateProps {
   className?: string;
 }
 
+/**
+ * @returns EmptyState component
+ * This component is used to display an empty state for the character cards
+ */
 const EmptyState = ({
   icon,
   title,

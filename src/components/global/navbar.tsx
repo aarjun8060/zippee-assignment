@@ -1,4 +1,3 @@
-import React from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { Button } from '../ui/button';
 import { useDispatch, useSelector } from 'react-redux';
@@ -6,7 +5,11 @@ import type { AppDispatch, RootState } from '../../redux/store/store';
 import { setIsAuthenticated, setUser } from '../../redux/slices/auth';
 import Logo from './logo';
 
-
+/**
+ * 
+ * @returns Navbar component
+ * This component is used to display the navbar
+ */
 function Navbar() {
   const dispatch = useDispatch<AppDispatch>();
   const navigate = useNavigate();

@@ -36,6 +36,10 @@ const loginSchema = z.object({
 
 type LoginFormData = z.infer<typeof loginSchema>;
 
+/**
+ * @returns LoginForm component
+ * This component is used to display the login form using zod and react-hook-form
+ */
 export function LoginForm({
   className,
   ...props

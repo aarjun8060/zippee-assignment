@@ -7,6 +7,15 @@ import type {
 } from "../../types";
 import axios from "axios";
 
+/**
+ * @returns CharacterApi component
+ * This component is used to display the character API
+ * 
+ * getCharacters - Get the characters from the API
+ * getCharacterById - Get the character by ID from the API
+ * getHomeworld - Get the homeworld from the API
+ * getSpecies - Get the species from the API
+ */
 class CharacterApi {
   async getCharacters(pageUrl?: string | null): Promise<{
     success: boolean;

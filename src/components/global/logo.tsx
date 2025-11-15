@@ -1,5 +1,9 @@
 import { BoxIcon } from "lucide-react";
 
+/**
+ * @returns Logo component
+ * This component is used to display the logo with the name "Zippee"
+ */
 const Logo = () => {
     return (
       <div className="flex justify-center gap-2 md:justify-start">

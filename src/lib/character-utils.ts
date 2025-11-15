@@ -1,5 +1,9 @@
 import type { Gender } from "../types";
 
+/**
+ * @param gender - The gender of the character
+ * @returns The gender icon for the character
+ */
 export const getGenderIcon = (gender: Gender) => {
   switch (gender) {
     case "male":
@@ -11,6 +15,10 @@ export const getGenderIcon = (gender: Gender) => {
   }
 };
 
+/**
+ * @param gender - The gender of the character
+ * @returns The gender color for the character
+ */
 export const getGenderColor = (gender: Gender) => {
   switch (gender) {
     case "male":

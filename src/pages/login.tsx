@@ -1,6 +1,10 @@
 import Logo from "../components/global/logo";
 import { LoginForm } from "../components/login-form";
 
+/**
+ * @returns LoginPage component
+ * This component is used to display the login page with the login form
+ */
 export default function LoginPage() {
   return (
     <div className="grid min-h-svh lg:grid-cols-2 w-full">

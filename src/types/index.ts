@@ -1,4 +1,12 @@
+/**
+ * @returns type of User , Character, Homeworld, Species
+ * User - The user type
+ * Character - The character type
+ * Homeworld - The homeworld type
+ * Species - The species type
+ */
 export type Gender = "male" | "female" | "unknown" | "n/a";
+
 
 export interface Homeworld {
   name: string;

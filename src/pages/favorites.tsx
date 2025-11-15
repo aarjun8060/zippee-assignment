@@ -6,7 +6,11 @@ import CharacterSkeleton from "../components/global/character-skeleton";
 import CharacterCard from "../components/characer-card";
 import EmptyState from "../components/global/empty-state";
 import { Heart } from "lucide-react";
-
+/**
+ * 
+ * @returns Favorites component
+ * This component is used to display the favorites page with the favorite characters
+ */
 const Favorites = () => {
   const { favorites, isLoading } = useSelector(
     (state: RootState) => state.character

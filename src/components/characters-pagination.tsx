@@ -20,6 +20,10 @@ interface CharactersPaginationProps {
 
 const ITEMS_PER_PAGE = 10;
 
+/**
+ * @returns CharactersPagination component
+ * This component is used to display the pagination for the characters
+ */
 const CharactersPagination = ({
   totalCount,
   nextPageUrl,

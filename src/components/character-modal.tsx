@@ -30,6 +30,10 @@ const InfoRow = ({
   );
 };
 
+/**
+ * @returns CharacterModal component
+ * This component is used to display a character modal with the character details
+ */
 const CharacterModal = ({
   character,
   open,
@@ -160,7 +164,6 @@ const CharacterModal = ({
             </Card>
           )}
 
-          {/* Additional Information */}
           <Card>
             <CardContent className="pt-6">
               <h3 className="text-lg font-semibold mb-4">
